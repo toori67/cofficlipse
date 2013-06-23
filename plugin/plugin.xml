@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+   <extension
+         point="org.eclipse.ui.commands">
+      <command
+            defaultHandler="cofficlipse_plugin.media.StartCoffee"
+            id="cofficlipse-plugin.start"
+            name="start">
+      </command>
+      <command
+            defaultHandler="cofficlipse_plugin.media.StopCoffee"
+            id="cofficlipse-plugin.stop"
+            name="stop">
+      </command>
+   </extension>
+   <extension
+         point="org.eclipse.ui.menus">
+      <menuContribution
+            allPopups="false"
+            locationURI="toolbar:org.eclipse.ui.main.toolbar">
+         <toolbar
+               id="cofficlipse-plugin.coffitifybar"
+               label="coffitify">
+            <command
+                  commandId="cofficlipse-plugin.start"
+                  icon="img/play.gif"
+                  style="push">
+            </command>
+            <command
+                  commandId="cofficlipse-plugin.stop"
+                  icon="img/stop.gif"
+                  label="st"
+                  style="push">
+            </command>
+         </toolbar>
+      </menuContribution>
+   </extension>
+
+</plugin>
