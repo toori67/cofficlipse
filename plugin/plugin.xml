@@ -27,12 +27,6 @@
                   icon="img/play.gif"
                   style="push">
             </command>
-            <command
-                  commandId="cofficlipse-plugin.stop"
-                  icon="img/stop.gif"
-                  label="st"
-                  style="push">
-            </command>
          </toolbar>
       </menuContribution>
    </extension>

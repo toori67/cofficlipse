@@ -1,5 +1,13 @@
 package cofficlipse_plugin.toolbar;
 
+import org.eclipse.jface.action.IContributionItem;
+import org.eclipse.jface.action.IContributionManager;
+import org.eclipse.jface.action.ICoolBarManager;
+import org.eclipse.jface.action.IToolBarManager;
+import org.eclipse.swt.widgets.Composite;
+import org.eclipse.swt.widgets.CoolBar;
+import org.eclipse.swt.widgets.Menu;
+import org.eclipse.swt.widgets.ToolBar;
 import org.eclipse.ui.application.ActionBarAdvisor;
 import org.eclipse.ui.application.IActionBarConfigurer;
 import org.eclipse.ui.application.IWorkbenchWindowConfigurer;
@@ -23,6 +31,8 @@ public class ApplicationWorkbenchWindowAdvisor extends WorkbenchWindowAdvisor {
 	public void preWindowOpen() {
 		IWorkbenchWindowConfigurer configurer = getWindowConfigurer();
 		configurer.setShowCoolBar(true);
+		ICoolBarManager itm = configurer.getActionBarConfigurer().getCoolBarManager();
+		
 	}
 
 }
