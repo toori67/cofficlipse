@@ -3,10 +3,10 @@ cofficlipse
 
 http://www.coffitivity.com/
 
-eclipse version. 
+coffitivity eclipse plugin.
 
 You can find on MarketPlace someday.
 
-Only tested on Linux, Eclipse Juno. 
+Tested on Linux, Eclipse Juno.
 
 Bug Report welcome.
