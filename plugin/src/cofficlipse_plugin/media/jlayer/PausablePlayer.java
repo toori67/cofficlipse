@@ -8,10 +8,10 @@ import javazoom.jl.player.Player;
 
 public class PausablePlayer {
 
-    private final static int NOTSTARTED = 0;
-    private final static int PLAYING = 1;
-    private final static int PAUSED = 2;
-    private final static int FINISHED = 3;
+    public final static int NOTSTARTED = 0;
+    public final static int PLAYING = 1;
+    public final static int PAUSED = 2;
+    public final static int FINISHED = 3;
 
     // the player actually doing all the work
     private final Player player;
@@ -130,5 +130,14 @@ public class PausablePlayer {
         } catch (final Exception e) {
             // ignore, we are terminating anyway
         }
+    }
+    
+    /**
+     * Get players status for replay
+     */
+    public int getPlayerStatus(){
+    	 synchronized (playerLock) {
+    		 return playerStatus;
+         }
     }
 }
